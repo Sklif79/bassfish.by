@@ -1,0 +1,44 @@
+.popup {
+  display: none;
+  position: relative;
+  padding: 37px 50px 50px;
+  background: #fff;
+  max-width: 680px;
+  border-radius: 6px;
+  min-width: 300px;
+
+  &__title {
+    text-transform: uppercase;
+    .fsize(26);
+    color: #3D3D3D;
+    text-align: center;
+    margin-bottom: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  &__fancybox-close {
+    position: absolute;
+    background: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 35px;
+    right: 49px;
+
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: #3D3D3D;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(135deg);
+    }
+  }
+}
